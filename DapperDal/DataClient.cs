@@ -12,6 +12,11 @@ namespace DapperDal
     public class DataClient : IDataClient
     {
         private readonly ISqlConnectionFactory connectionFactory;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="ConnectionFactory">Sql connection string factory</param>
         public DataClient(ISqlConnectionFactory ConnectionFactory)
         {
             connectionFactory = ConnectionFactory;
